@@ -45,9 +45,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".header-wrapper {background-color: rgba(0, 0, 0, 0.1);}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
