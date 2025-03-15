@@ -16,15 +16,6 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-{%- if section.settings.transparent_header -%}
-  {% if template.name == "index" %}
-    <style>
-      .header-wrapper {
-        background-color: rgba(0, 0, 0, 0.);
-      }
-    </style>
-  {% endif %}
-{% endif %}
 
 <style>
   header-drawer {
