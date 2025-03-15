@@ -53,12 +53,7 @@
         "slide_EHBac8",
         "slide_J7mpxV"
       ],
-      "custom_css": [
-        ".slideshow__controls {bottom: 45px;}",
-        ".slider-button {color: white;}",
-        ".slider-counter__link--active {background-color: none;}",
-        ".dot {background-color: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
