@@ -113,17 +113,6 @@
               </div>
             {%- endfor -%}
           </div>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'sections.announcements.next_announcement' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </button>
         </div>
       </slideshow-component>
       {%- if request.design_mode -%}
