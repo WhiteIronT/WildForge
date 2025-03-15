@@ -54,7 +54,6 @@
         "slide_J7mpxV"
       ],
       "custom_css": [
-        ".slideshow {margin-top: -80px;}",
         ".slideshow__controls {bottom: 45px;}",
         ".slider-button {color: white;}",
         ".slider-counter__link--active {background-color: none;}",
