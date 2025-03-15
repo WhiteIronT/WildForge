@@ -45,6 +45,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header-wrapper {background-color: rgba(0, 0, 0, 0.1);}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
@@ -52,8 +55,8 @@
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
+        "color_scheme": "scheme-a8f17c30-f69e-4c6f-a742-f87fa45d3d16",
+        "menu_color_scheme": "scheme-a8f17c30-f69e-4c6f-a742-f87fa45d3d16",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
