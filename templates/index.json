@@ -53,6 +53,11 @@
         "slide_EHBac8",
         "slide_J7mpxV"
       ],
+      "custom_css": [
+        ".slideshow {bottom: -45px;}",
+        ".slider-button {color: white;}",
+        ".dot {background-color: white;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
