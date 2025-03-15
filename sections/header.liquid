@@ -16,6 +16,14 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+{% if template.name == "index" %}
+  <style>
+ .header-wrapper {
+   background-color: rgba(0, 0, 0, 0.1);
+ }
+  </style>
+ {% endif %}
+
 <style>
   header-drawer {
     justify-self: start;
