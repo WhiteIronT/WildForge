@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/rockpile-in-forest.jpg",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 40,
             "heading": "Explore the Full Range",
             "heading_size": "h0",
             "subheading": "",
