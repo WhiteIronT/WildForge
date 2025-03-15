@@ -58,7 +58,7 @@
         ".slideshow__controls {bottom: 45px;}",
         ".slider-button {color: white;}",
         ".slider-counter__link--active {background-color: none;}",
-        ".dot {background-color: white;}"
+        ".dot {background-color: none;}"
       ],
       "settings": {
         "layout": "full_bleed",
