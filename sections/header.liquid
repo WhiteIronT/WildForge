@@ -1,3 +1,19 @@
+<style>
+  sticky-header.header-wrapper {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  sticky-header.header-wrapper.scrolled {
+    background: rgba(0, 0, 0, 0.534); 
+    transition: background-color 0.3s ease;
+  }
+</style>
+
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -319,7 +335,7 @@
     }
 
     connectedCallback() {
-      this.header = document.querySelector('.section-header');
+      this.header = document.querySelector('.header-wrapper');
       this.headerIsAlwaysSticky =
         this.getAttribute('data-sticky-type') === 'always' ||
         this.getAttribute('data-sticky-type') === 'reduce-logo-size';
@@ -371,10 +387,12 @@
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
+        this.header.classList.add('scrolled'); // Add this line
         if (this.preventHide) return;
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
+        this.header.classList.add('scrolled'); // Add this line
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
         } else {
@@ -388,6 +406,7 @@
         }
       } else if (scrollTop <= this.headerBounds.top) {
         this.header.classList.remove('scrolled-past-header');
+        this.header.classList.remove('scrolled'); // Add this line
         requestAnimationFrame(this.reset.bind(this));
       }
 
