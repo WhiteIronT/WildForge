@@ -11,38 +11,6 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "JOIN US FOR 15% OFF YOUR FIRST ORDER",
-            "link": ""
-          }
-        },
-        "announcement_drdnNi": {
-          "type": "announcement",
-          "settings": {
-            "text": "free shipping on orders over £50",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0",
-        "announcement_drdnNi"
-      ],
-      "settings": {
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "color_scheme": "scheme-1",
-        "show_line_separator": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": false
-      }
-    },
     "header": {
       "type": "header",
       "custom_css": [],
@@ -65,7 +33,6 @@
     }
   },
   "order": [
-    "announcement-bar",
     "header"
   ]
 }
