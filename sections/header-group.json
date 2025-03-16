@@ -47,6 +47,11 @@
       "type": "header",
       "custom_css": [],
       "settings": {
+        "enable_transparent-header": true,
+        "enable_hover_animation": false,
+        "color-transparent": "",
+        "color-hover-background": "",
+        "color-hover-text": "",
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
