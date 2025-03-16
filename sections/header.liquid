@@ -1,17 +1,19 @@
 <style>
-  sticky-header.header-wrapper {
-    background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: background-color 0.3s ease;
-  }
+  {% if section.settings.enable_transparent_header %}
+    sticky-header.header-wrapper {
+      background: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: background-color 0.3s ease;
+    }
 
-  sticky-header.header-wrapper.scrolled {
-    background: rgba(0, 0, 0, 0.534); 
-    transition: background-color 0.3s ease;
-  }
+    sticky-header.header-wrapper.scrolled {
+      background: rgba(0, 0, 0, 0.534); 
+      transition: background-color 0.3s ease;
+    }
+  {% endif %}
 </style>
 
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -587,6 +589,12 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header",
+      "default": false,
+      "label": "Enable Transparent Header"
     },
     {
       "type": "header",

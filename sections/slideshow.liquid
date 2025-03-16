@@ -25,6 +25,19 @@
   {%- endstyle -%}
 {%- endif -%}
 
+<style>
+  @media screen and (min-width: 749px){
+    .slideshow__controls {
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+    }
+  }
+</style>
+
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
