@@ -1,7 +1,7 @@
 <style>
   {% if section.settings.enable_transparent_header %}
     sticky-header.header-wrapper {
-      background: transparent;
+      background: transparent; /* Hard code the transparency value */
       position: fixed;
       top: 0;
       left: 0;
@@ -10,8 +10,19 @@
     }
 
     sticky-header.header-wrapper.scrolled {
-      background: rgba(0, 0, 0, 0.534); 
+      background: rgba(255, 255, 255, 0.192); /* Change the background color on scroll */
       transition: background-color 0.3s ease;
+    }
+
+    .header__icons,
+    .header__heading-link,
+    .header__icon,
+    .header__heading,
+    .header__menu-item,
+    .header__menu-item a,
+    .header__menu-item span,
+    .header__menu-item button {
+      color: {{ section.settings.header_text_color }} !important; /* Use the text color setting */
     }
   {% endif %}
 </style>
@@ -595,6 +606,12 @@
       "id": "enable_transparent_header",
       "default": false,
       "label": "Enable Transparent Header"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Text and Icon Color",
+      "default": "#FFFFFF"
     },
     {
       "type": "header",
