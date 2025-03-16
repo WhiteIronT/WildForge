@@ -34,6 +34,7 @@
         left: 50%;
         transform: translateX(-50%);
         border: none;
+        color: {{ section.settings.controls_color }};
     }
   }
 
@@ -45,7 +46,17 @@
         left: 50%;
         transform: translateX(-50%);
         border: none;
+        color: {{ section.settings.controls_color }};
     }
+  }
+
+  .slider-button,
+  .slider-counter__link {
+    color: {{ section.settings.controls_color }};
+  }
+
+  .slider-counter__link .dot {
+    background-color: {{ section.settings.dots_color }};
   }
 </style>
 
@@ -309,6 +320,18 @@
       ],
       "default": "full_bleed",
       "label": "t:sections.slideshow.settings.layout.label"
+    },
+    {
+      "type": "color",
+      "id": "controls_color",
+      "label": "Controls Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "dots_color",
+      "label": "Dots Color",
+      "default": "#FFFFFF"
     },
     {
       "type": "select",
