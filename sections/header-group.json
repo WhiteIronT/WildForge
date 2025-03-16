@@ -48,7 +48,7 @@
       "custom_css": [],
       "settings": {
         "enable_transparent-header": true,
-        "enable_hover_animation": true,
+        "enable_hover_animation": false,
         "color-transparent": "",
         "color-hover-background": "",
         "color-hover-text": "",
