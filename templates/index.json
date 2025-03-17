@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/rockpile-in-forest.jpg",
-            "image_overlay_opacity": 50,
+            "image_overlay_opacity": 40,
             "heading": "ADVENTURE BEGINS WITH THE RIGHT GEAR",
             "heading_size": "h0",
             "subheading": "Range of Accessories, Hunting, Camping, Fishing, Bushcraft Knives, and More",
@@ -57,7 +57,7 @@
         "layout": "full_bleed",
         "controls_color": "#FFFFFF",
         "dots_color": "#FFFFFF",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 3,
