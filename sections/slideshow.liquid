@@ -59,7 +59,7 @@
   .slider-counter__link .square {
     width: 16px;
     height: 16px;
-    border: 2px solid {{ section.settings.dots_color }};
+    border: 2px solid {{ section.settings.pagination_color }};
     background-color: transparent;
     display: inline-block;
     margin: 0 4px;
@@ -67,17 +67,22 @@
 
   .slider-counter__link--active .dot,
   .slider-counter__link--active .square {
-    background-color: {{ section.settings.dots_color }};
+    background-color: {{ section.settings.pagination_color }};
     border: none;
   }
 
   .slider-counter__link .number {
-    color: {{ section.settings.dots_color }};
+    color: {{ section.settings.pagination_color }};
     margin: 0 4px;
   }
 
   .slider-counter__link--active .number {
     font-weight: bold;
+  }
+
+  .slider-counter--counter .slider-counter--current,
+  .slider-counter--counter .slider-counter--total {
+    color: {{ section.settings.pagination_color }};
   }
 </style>
 
@@ -321,6 +326,10 @@
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+{%- if request.design_mode -%}
+  <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.slideshow.name",
@@ -354,8 +363,8 @@
     },
     {
       "type": "color",
-      "id": "dots_color",
-      "label": "Dots Color",
+      "id": "pagination_color",
+      "label": "Pagination Color",
       "default": "#FFFFFF"
     },
     {
