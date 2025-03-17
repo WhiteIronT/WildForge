@@ -2343,7 +2343,7 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  /*background-color: rgb(var(--color-background)); */
 }
 
 .header-wrapper--border-bottom {
@@ -3594,4 +3594,8 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+
+.slideshow__controls.slider-buttons .slider-button {
+  display: none !important;
 }
