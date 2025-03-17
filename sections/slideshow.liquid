@@ -55,8 +55,29 @@
     color: {{ section.settings.controls_color }};
   }
 
-  .slider-counter__link .dot {
+  .slider-counter__link .dot,
+  .slider-counter__link .square {
+    width: 16px;
+    height: 16px;
+    border: 2px solid {{ section.settings.dots_color }};
+    background-color: transparent;
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  .slider-counter__link--active .dot,
+  .slider-counter__link--active .square {
     background-color: {{ section.settings.dots_color }};
+    border: none;
+  }
+
+  .slider-counter__link .number {
+    color: {{ section.settings.dots_color }};
+    margin: 0 4px;
+  }
+
+  .slider-counter__link--active .number {
+    font-weight: bold;
   }
 </style>
 
@@ -89,14 +110,16 @@
           <div class="slideshow__control-wrapper">
             {%- for block in section.blocks -%}
               <button
-                class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
+                class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link{% if forloop.first %} slider-counter__link--active{% endif %}"
                 aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 aria-controls="Slider-{{ section.id }}"
               >
-                {%- if section.settings.slider_visual == 'numbers' -%}
-                  {{ forloop.index -}}
-                {%- else -%}
-                  <span class="dot"></span>
+                {%- if section.settings.slider_visual == 'dots' -%}
+                  <div class="dot{% if forloop.first %} active{% endif %}"></div>
+                {%- elsif section.settings.slider_visual == 'squares' -%}
+                  <div class="square{% if forloop.first %} active{% endif %}"></div>
+                {%- elsif section.settings.slider_visual == 'numbers' -%}
+                  <span class="number{% if forloop.first %} active{% endif %}">{{ forloop.index }}</span>
                 {%- endif -%}
               </button>
             {%- endfor -%}
@@ -248,14 +271,16 @@
           <div class="slideshow__control-wrapper">
             {%- for block in section.blocks -%}
               <button
-                class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
+                class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link{% if forloop.first %} slider-counter__link--active{% endif %}"
                 aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 aria-controls="Slider-{{ section.id }}"
               >
-                {%- if section.settings.slider_visual == 'numbers' -%}
-                  {{ forloop.index -}}
-                {%- else -%}
-                  <span class="dot"></span>
+                {%- if section.settings.slider_visual == 'dots' -%}
+                  <div class="dot{% if forloop.first %} active{% endif %}"></div>
+                {%- elsif section.settings.slider_visual == 'squares' -%}
+                  <div class="square{% if forloop.first %} active{% endif %}"></div>
+                {%- elsif section.settings.slider_visual == 'numbers' -%}
+                  <span class="number{% if forloop.first %} active{% endif %}">{{ forloop.index }}</span>
                 {%- endif -%}
               </button>
             {%- endfor -%}
@@ -372,6 +397,10 @@
         {
           "value": "numbers",
           "label": "t:sections.slideshow.settings.slider_visual.options__3.label"
+        },
+        {
+          "value": "squares",
+          "label": "Squares"
         }
       ],
       "default": "counter",
