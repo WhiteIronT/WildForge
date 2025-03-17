@@ -16,10 +16,10 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/rockpile-in-forest.jpg",
-            "image_overlay_opacity": 40,
+            "image_overlay_opacity": 50,
             "heading": "ADVENTURE BEGINS WITH THE RIGHT GEAR",
             "heading_size": "h0",
-            "subheading": "Range of Accessories, Hunting, Camping, Fishing, Bushcraft, Survival Knives, and More",
+            "subheading": "Range of Accessories, Hunting, Camping, Fishing, Bushcraft Knives, and More",
             "button_label": "Explore All",
             "link": "",
             "button_style_secondary": false,
@@ -30,28 +30,27 @@
             "color_scheme": "scheme-3"
           }
         },
-        "slide_J7mpxV": {
+        "slide_aRGgmD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/camping-kindling-ready-to-be-lit.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Check out our equipment",
+            "heading": "Image slide",
             "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Shop Equipment",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
+            "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
         "slide_EHBac8",
-        "slide_J7mpxV"
+        "slide_aRGgmD"
       ],
       "custom_css": [],
       "settings": {
@@ -60,7 +59,7 @@
         "dots_color": "#FFFFFF",
         "slide_height": "medium",
         "slider_visual": "dots",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 3,
         "image_behavior": "ambient",
         "show_text_below": false,
