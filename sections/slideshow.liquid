@@ -63,21 +63,36 @@
     background-color: transparent;
     display: inline-block;
     margin: 0 4px;
+    opacity: 0.5; /* Initial transparency */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  .slider-counter__link:hover .dot,
+  .slider-counter__link:hover .square {
+    opacity: 1; /* Full opacity on hover */
   }
 
   .slider-counter__link--active .dot,
   .slider-counter__link--active .square {
     background-color: {{ section.settings.pagination_color }};
     border: none;
+    opacity: 0.5; /* Keep active element transparent */
   }
 
   .slider-counter__link .number {
     color: {{ section.settings.pagination_color }};
     margin: 0 4px;
+    opacity: 0.5; /* Initial transparency */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  .slider-counter__link:hover .number {
+    opacity: 1; /* Full opacity on hover */
   }
 
   .slider-counter__link--active .number {
     font-weight: bold;
+    opacity: 0.5; /* Keep active element transparent */
   }
 
   .slider-counter--counter .slider-counter--current,
