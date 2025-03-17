@@ -99,6 +99,16 @@
   .slider-counter--counter .slider-counter--total {
     color: {{ section.settings.pagination_color }};
   }
+
+  /* Responsive heading size */
+  @media screen and (max-width: 450px) {
+    .banner__heading.h0,
+    .banner__heading.h1,
+    .banner__heading.hxl,
+    .banner__heading.hxxl {
+      font-size: var(--font-size-medium); /* Adjust the size as needed */
+    }
+  }
 </style>
 
 <slideshow-component
