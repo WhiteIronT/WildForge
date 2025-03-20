@@ -250,11 +250,22 @@
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
-            {%- if block.settings.subheading != blank -%}
+            {%- if 
+              block.settings.subheading != blank -%}
+              <style>.svg-wrapper svg {
+                fill: white; /* Ensures the SVG is white */
+                width: 16px; /* Adjust size if needed */
+                height: 16px;
+              }</style>
               <div class="banner__text rte">
-                <p>{{ block.settings.subheading }}</p>
+                <p>
+                  {{ block.settings.subheading }}
+                  <span class="svg-wrapper">
+                    {{ 'icon-link-arrow.svg' | inline_asset_content }}
+                  </span>
+                </p>
               </div>
-            {%- endif -%}
+            {%- endif -%}            
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
                 <a
