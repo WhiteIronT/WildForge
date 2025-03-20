@@ -108,8 +108,8 @@
           "settings": {
             "heading": "Spec",
             "icon": "none",
-            "row_content": "{{ block.settings.page.content }}",
-            "page": ""
+            "row_content": "<p>{{ block.settings.page.title }}</p>",
+            "page": "contact"
           }
         },
         "collapsible_row_zNBnYn": {
