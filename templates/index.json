@@ -20,7 +20,7 @@
             "heading": "ADVENTURE BEGINS WITH THE RIGHT GEAR",
             "heading_size": "h0",
             "subheading": "Explore our range of Hunting, Camping, Fishing, Bushcraft Knives & Accessories",
-            "button_label": "Explore All",
+            "button_label": "",
             "link": "",
             "button_style_secondary": true,
             "show_text_box": false,
@@ -56,7 +56,7 @@
       "settings": {
         "layout": "full_bleed",
         "controls_color": "#ffffff",
-        "pagination_color": "#FFFFFF",
+        "pagination_color": "#ffffff",
         "slide_height": "large",
         "slider_visual": "squares",
         "auto_rotate": false,
