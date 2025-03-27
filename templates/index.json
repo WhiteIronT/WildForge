@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "ss_back_to_top_WReRm7": {
+      "type": "ss-back-to-top",
+      "settings": {
+        "horizontal_position": "right",
+        "horizontal_dst_to_edge": 30,
+        "horizontal_dst_to_edge_mobile": 20,
+        "vertical_dst_to_edge": 50,
+        "vertical_dst_to_edge_mobile": 50,
+        "circle_size": 46,
+        "circle_size_mobile": 46,
+        "progress_thickness": 4,
+        "circle_bg_color": "#000000",
+        "circle_bg_hover_color": "#cbbeb0",
+        "progress_color": "#F5F5F5",
+        "progress_active_color": "#000000",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#000000"
+      }
+    },
     "slideshow_fLeUpH": {
       "type": "slideshow",
       "blocks": {
@@ -205,6 +224,7 @@
     }
   },
   "order": [
+    "ss_back_to_top_WReRm7",
     "slideshow_fLeUpH",
     "featured_collection",
     "collection_list_z8VKy8",
