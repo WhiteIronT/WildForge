@@ -21,7 +21,7 @@
         "circle_size_mobile": 46,
         "progress_thickness": 4,
         "circle_bg_color": "#000000",
-        "circle_bg_hover_color": "#cbbeb0",
+        "circle_bg_hover_color": "#ffffff",
         "progress_color": "#F5F5F5",
         "progress_active_color": "#000000",
         "arrow_color": "#ffffff",
